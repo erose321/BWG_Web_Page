@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.calendar {
+    margin: auto;
+    align-items: center;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: double;
+
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.calendar-day {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px;
+    position: relative;
+}
+
+.date-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.calendar-day .events {
+    margin-top: 15px;
+}
+
+.calendar-day .event {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.calendar-day.empty {
+    background-color: transparent;
+    border: 1px solid #ddd;;
+
+}
+
+.event.tourney{
+    background-color: #fae3fd;
+    border: 1px solid #f990d8;
+}
+
+.event.practice {
+    background-color: #67d8fe;
+    border: 1px solid #05c0ff;
+}
+
+.event.depart {
+    background-color: rgb(255, 241, 114);
+    border: 1px solid rgb(255, 208, 0);
+}
+
+.event.other {
+    background-color: rgb(157, 255, 159);
+    border: 1px solid rgb(9, 255, 14);
+}
+
+.event.lobster {
+    background-color: rgb(252, 183, 146);
+    border: 1px solid rgb(255, 153, 0);
+}
+
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9DYWxlbmRhci5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGNBQWM7SUFDZCxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLG1CQUFtQjtJQUNuQixvQkFBb0I7O0FBRXhCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixXQUFXO0lBQ1gsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IscUNBQXFDO0lBQ3JDLFNBQVM7SUFDVCxXQUFXO0lBQ1gsaUJBQWlCOztBQUVyQjs7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsc0JBQXNCO0lBQ3RCLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGlCQUFpQjtJQUNqQixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksNkJBQTZCO0lBQzdCLHNCQUFzQjs7QUFFMUI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLG9DQUFvQztJQUNwQyxrQ0FBa0M7QUFDdEM7O0FBRUE7SUFDSSxvQ0FBb0M7SUFDcEMsaUNBQWlDO0FBQ3JDOztBQUVBO0lBQ0ksb0NBQW9DO0lBQ3BDLGtDQUFrQztBQUN0QyIsInNvdXJjZXNDb250ZW50IjpbIi5jYWxlbmRhciB7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWF4LXdpZHRoOiA4MCU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyLXN0eWxlOiBkb3VibGU7XG5cbn1cblxuLmNhbGVuZGFyLWhlYWRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LXdpZHRoOiAxMjAwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbiAgICBmb250LXNpemU6IGxhcmdlO1xufVxuXG4uY2FsZW5kYXItZ3JpZCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCg3LCAxZnIpO1xuICAgIGdhcDogMTBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXgtd2lkdGg6IDEyMDBweDtcblxufVxuXG4uY2FsZW5kYXItZGF5IHtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIG1pbi1oZWlnaHQ6IDEwMHB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmRhdGUtbnVtYmVyIHtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGNvbG9yOiAjMDAwO1xufVxuXG4uY2FsZW5kYXItZGF5IC5ldmVudHMge1xuICAgIG1hcmdpbi10b3A6IDE1cHg7XG59XG5cbi5jYWxlbmRhci1kYXkgLmV2ZW50IHtcbiAgICBwYWRkaW5nOiA1cHg7XG4gICAgbWFyZ2luLXRvcDogNXB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDNweDtcbiAgICBmb250LXNpemU6IDAuODVlbTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5jYWxlbmRhci1kYXkuZW1wdHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7O1xuXG59XG5cbi5ldmVudC50b3VybmV5e1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmYWUzZmQ7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2Y5OTBkODtcbn1cblxuLmV2ZW50LnByYWN0aWNlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNjdkOGZlO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwNWMwZmY7XG59XG5cbi5ldmVudC5kZXBhcnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI0MSwgMTE0KTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCByZ2IoMjU1LCAyMDgsIDApO1xufVxuXG4uZXZlbnQub3RoZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYigxNTcsIDI1NSwgMTU5KTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCByZ2IoOSwgMjU1LCAxNCk7XG59XG5cbi5ldmVudC5sb2JzdGVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjUyLCAxODMsIDE0Nik7XG4gICAgYm9yZGVyOiAxcHggc29saWQgcmdiKDI1NSwgMTUzLCAwKTtcbn1cblxuXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header></header><main><div class="calendar"><div class="calendar-header"><button>Previous</button><h2>September 2024</h2><button>Next</button></div><div class="calendar-grid"><div class="calendar-day"><span class="date-number">1</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">2</span><div class="events"><div class="event lobster">•Lobster Bake!</div></div></div><div class="calendar-day"><span class="date-number">3</span><div class="events"><div class="event other">•First day of class</div><div class="event practice">•First practice</div></div></div><div class="calendar-day"><span class="date-number">4</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">5</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">6</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">7</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">8</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">9</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">10</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">11</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">12</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">13</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">14</span><div class="events"><div class="event tourney">•POLAR BEAR SHOOTOUT @ Brunswick GC</div></div></div><div class="calendar-day"><span class="date-number">15</span><div class="events"><div class="event tourney">•POLAR BEAR SHOOTOUT @ Brunswick GC</div></div></div><div class="calendar-day"><span class="date-number">16</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">17</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">18</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">19</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">20</span><div class="events"><div class="event depart">•Depart for Midd</div></div></div><div class="calendar-day"><span class="date-number">21</span><div class="events"><div class="event tourney">•GEORGE PHINNEY CLASSIC @ Ralph Myhre G.C. / Middlebury, Vt.</div></div></div><div class="calendar-day"><span class="date-number">22</span><div class="events"><div class="event tourney">•GEORGE PHINNEY CLASSIC @ Ralph Myhre G.C. / Middlebury, Vt.</div></div></div><div class="calendar-day"><span class="date-number">23</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">24</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">25</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">26</span><div class="events"></div></div><div class="calendar-day"><span class="date-number">27</span><div class="events"><div class="event depart">•Depart for Williams</div></div></div><div class="calendar-day"><span class="date-number">28</span><div class="events"><div class="event tourney">•WILLIAMS INVITATIONAL @ Taconic G.C. / Williamstown, Mass.</div></div></div><div class="calendar-day"><span class="date-number">29</span><div class="events"><div class="event tourney">•WILLIAMS INVITATIONAL @ Taconic G.C. / Williamstown, Mass.</div></div></div><div class="calendar-day"><span class="date-number">30</span><div class="events"></div></div></div></div></main></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+<iframe id="OLJbHnYM" frameborder="0" src="./React App_files/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></body></html>

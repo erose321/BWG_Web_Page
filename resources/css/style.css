@@ -1,0 +1,93 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    background-color: #000000;
+    position: fixed; /* Makes the bar stick to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the bar is on top of other elements */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    height: 100%;
+}
+main {
+    padding-top: 80px; /* Adjust based on the height of the header */
+}
+
+.logo a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+}
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Adjust font size as needed */
+}
+.logo-image-left{ 
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 30px;
+    top: 3px;;
+}
+.logo-image-right{ 
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    right: 30px;
+    top: 3px;;
+}
+
+#root {
+
+}
+
+.team-photo {
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 2em;
+    border-radius: 50%;
+    border-color: rgb(155, 37, 37);
+    padding: 20px;
+
+}
