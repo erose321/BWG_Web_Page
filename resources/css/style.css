@@ -35,9 +35,7 @@ header h1 {
     white-space: nowrap;
     font-size: 5vw;
 }
-main {
-    padding-top: 5rem; /* Adjust based on the height of the header */
-}
+
 
 nav ul {
     font-size: 2.5vw;
@@ -81,21 +79,11 @@ nav a {
     width: 75%;
 }
 
-
-
-#sections {
-    margin-top: 8%;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 2em;
-    padding: 1.25em; 
-    border-radius: 10%;
-    border: 0.2em solid rgb(0, 0, 0); 
-    display: inline-block; 
-    background-color: #f0f0f0;
-    width: 90%;
-    max-width: 600px;
-
+.sections{
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 5vw;
 }
 
 @media (min-width: 600px) {
@@ -103,22 +91,12 @@ nav a {
         flex-direction: row;
     }
 
-    #sections {
-        width: 70%;
-        font-size: 1.5em;
-    }
 }
 
 @media (min-width: 800px) {
     .navbar {
         flex-direction: row;
     }
-
-    #sections {
-        width: 50%;
-        font-size: 1.2em;
-    }
-
     nav ul {
         font-size: 1.5vw;
     }
