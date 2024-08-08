@@ -7,79 +7,75 @@ body, ul, li {
 }
 
 header {
-    width: 100%;
     background-color: #000000;
-    position: fixed; /* Makes the bar stick to the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensures the bar is on top of other elements */
+    padding: 20px;
 }
 
-.navbar {
+.header-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 40px;
-    height: 100%;
-}
-main {
-    padding-top: 80px; /* Adjust based on the height of the header */
+    padding: 0 8vw;
+
 }
 
-.logo a {
-    text-align: center;
+header h1 {
     color: white;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 6vw;
 }
-.logo {
-    flex: 1;
-    text-align: center;
+main {
+    padding-top: 5rem; /* Adjust based on the height of the header */
 }
 
 nav ul {
+    font-size: 2.9vw;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Space between navigation items */
+    justify-content: center;
+    gap: 0.8em; /* Space between navigation items */
     background-color: transparent;
 }
 nav li {
     display: inline;
     background-color: transparent;
 }
-
 nav a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 1em; /* Adjust font size as needed */
 }
+
 .logo-image-left{ 
-    width: 85px;
-    height: 85px;
+    width: calc(4em + 1vw); /* Adjusted to scale with screen size and text size */
+    height: auto;
     position: absolute;
-    left: 30px;
-    top: 3px;;
+    left: 0.5vw;
 }
 .logo-image-right{ 
-    width: 85px;
-    height: 85px;
+    width: calc(4em + 1vw); /* Adjusted to scale with screen size and text size */
+    height: auto;
     position: absolute;
-    right: 30px;
-    top: 3px;;
+    right: 0.5vw;
 }
 
-#root {
-
-}
 
 .team-photo {
     display: block;
-    margin-top: 150px;
+    margin-top: 5vw;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
@@ -89,13 +85,45 @@ nav a {
 
 #sections {
     margin-top: 8%;
-    margin-right: 45%;
-    margin-left: 43%;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 2em;
-    padding: 20px; 
+    padding: 1.25em; 
     border-radius: 10%;
-    border: 3px solid rgb(0, 0, 0); 
+    border: 0.2em solid rgb(0, 0, 0); 
     display: inline-block; 
     background-color: #f0f0f0;
+    width: 90%;
+    max-width: 600px;
+
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    #sections {
+        width: 70%;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    #sections {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        font-size: 1.5vw;
+    }
+    header h1 {
+        font-size: 5vw;
+}
 
 }
