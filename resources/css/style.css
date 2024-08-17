@@ -82,7 +82,7 @@ nav a {
 }
 
 .sections{
-    font-size: 4vw;
+    font-size: 3vw;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 5vw;
@@ -98,14 +98,15 @@ nav a {
     margin: auto;
     padding: 20px;
 }
-
+iframe {
+    width: 100%;
+    max-width: 640px; /* Limits the maximum width on larger screens */
+    height: 800px;
+    border: none;
+}
 @media (min-width: 600px) {
     .navbar {
         flex-direction: row;
-    }
-
-    .sections {
-        font-size: 4vw;
     }
 
 }
@@ -119,6 +120,12 @@ nav a {
     }
     header h1 {
         font-size: 5vw;
+}
+
+@media (max-width: 650px) {
+    .sections{
+        font-size: 5vw;
+    }
 }
 
 }
