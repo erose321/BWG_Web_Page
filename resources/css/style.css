@@ -82,7 +82,7 @@ nav a {
 }
 
 .sections{
-    font-size: 3vw;
+    font-size: 4.75;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 5vw;
@@ -109,6 +109,10 @@ iframe {
         flex-direction: row;
     }
 
+    .sections {
+        font-size: 5vw;
+    }
+
 }
 
 @media (min-width: 800px) {
@@ -123,9 +127,7 @@ iframe {
 }
 
 @media (max-width: 650px) {
-    .sections{
-        font-size: 5vw;
-    }
+    
 }
 
 }
