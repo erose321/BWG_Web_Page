@@ -82,7 +82,7 @@ nav a {
 }
 
 .sections{
-    font-size: 4.75;
+    font-size: 3vw;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 5vw;
@@ -124,10 +124,6 @@ iframe {
     }
     header h1 {
         font-size: 5vw;
-}
-
-@media (max-width: 650px) {
-    
 }
 
 }
