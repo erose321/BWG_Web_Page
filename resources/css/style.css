@@ -82,7 +82,7 @@ nav a {
 }
 
 .sections{
-    font-size: 3vw;
+    font-size: 4vw;
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 5vw;
@@ -91,7 +91,12 @@ nav a {
 
 .link-to-form{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     margin: auto;
+    padding: 20px;
 }
 
 @media (min-width: 600px) {
